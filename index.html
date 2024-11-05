@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5x5 Mines Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="money-display">
+                <h2>Total Money: $<span id="total-money">0</span></h2>
+                <button id="add-money-button" class="add-money-button">Add Money</button>
+            </div>
+            <div class="bet-section">
+                <label for="bet-amount">Bet Amount</label>
+                <input type="number" id="bet-amount" placeholder="0.00" min="0">
+            </div>
+            <div class="mines-section">
+                <label for="mines">Mines</label>
+                <select id="mines">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                </select>
+            </div>
+            <button id="bet-button" class="bet-button">Bet</button>
+        </div>
+        <div class="game-board" id="game-board"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

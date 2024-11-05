@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e2b38;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #2a3b4f;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.money-display {
+    text-align: center;
+}
+
+.add-money-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.bet-section,
+.mines-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bet-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 10px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.game-board .cell {
+    background-color: #3c4e63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.game-board .cell.clicked {
+    background-color: #4caf50;
+}
+
+.game-board .cell.mine {
+    background-color: #e74c3c;
+}
